@@ -1,0 +1,266 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #0c141a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wallpaper {
+  width: 50%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.banner-small-text {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.banner-big-text {
+  width: max-content;
+}
+.up-to {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.after-up-to {
+  color: #1bb96b;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+}
+.on-chain-section {
+  position: relative;
+  background-color: #0c141a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 25%;
+}
+.on-chain-title {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-top: 10%;
+  margin-bottom: 50px;
+}
+.on-chain-items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.on-chain-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.on-chain-number {
+  color: #d3aa5e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.on-chain-unit {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.on-chain-image {
+  position: absolute;
+
+  bottom: -35%;
+  left: 0;
+  opacity: 0.6;
+}
+.game1 {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+
+  transition: all 1.3s;
+  backface-visibility: hidden;
+  background: hsla(0, 0%, 0%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 51%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 51%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 51%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FFFFFF", GradientType=1 );
+}
+.backgroundGame {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+.g1 {
+  background-image: url("../../assets/game1.png");
+  background-position-y: 60%;
+}
+
+.game1:hover .backgroundGame {
+  transform: scale(1.1);
+  transition: all 1.3s;
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 0.6;
+}
+.backgroundGame:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+.game-content {
+  color: #ffffff !important;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  bottom: -300px;
+  right: 20px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.game-first-line {
+  display: flex;
+  margin-bottom: 10px;
+}
+.game-content button {
+  display: flex;
+  height: 51px !important;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background: #d3aa5e;
+}
+.logo-game {
+  width: 24px;
+  height: 24px;
+}
+.game-name {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game-second-line {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 1000px;
+}
+.sponsors-title {
+  color: #fff;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sponsors {
+  position: relative;
+  background-color: #0c141a;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.main-image{
+  width: 90%;
+}
+
+
+.golden-dice{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.chip{
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+.phone-holding{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.extra-section{
+  height: 600px;
+  background-color: #0c141a;
+  background-image: url('../../assets/phoneHolding.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:80%;
+
+  overflow: hidden;
+}

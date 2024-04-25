@@ -1,0 +1,45 @@
+.instruction-container {
+    position: relative;
+  background-color: #0c141a;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  padding: 5%;
+  overflow: hidden;
+}
+.instruction-container img{
+    position: absolute;
+}
+.instruction-container li{
+    margin: 5% 0;
+    color: #d3aa5e;
+}
+.instruction-title {
+  color: #d3aa5e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 7% 0;
+}
+.instruction-content {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 48px 10%;
+  gap: 10px;
+  z-index: 1000;
+}
+.instruction-text {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 5% 0;
+}

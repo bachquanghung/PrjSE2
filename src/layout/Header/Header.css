@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  box-shadow: 0px 2px 1px #000000;
+
+  background-color: #000000;
+  background-color: #1a202c;
+}
+.fun {
+  color: #f5f5f5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.play {
+  color: #d3aa5e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.header-above {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.sign-header {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: white 1px solid;
+}
