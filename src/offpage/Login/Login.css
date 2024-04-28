@@ -10,7 +10,7 @@
   background-position: center;
   border-radius: 10px;
   z-index: 1000;
- position: fixed;
+  position: fixed;
 }
 .content-login {
   width: 45%;
@@ -33,16 +33,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.30);
-  backdrop-filter: blur(2px);   
-  border-radius: 180px 10px;
 }
 .welcome {
   color: #fff;
-  text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-size: 40px;
   font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  position: absolute;
+  bottom: 15%;
+  left: 20px;
+}
+.fun {
+  color: #f5f5f5;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.play {
+  color: #d3aa5e;
+  font-size: 96px;
+  font-style: italic;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 0.5px;
@@ -53,25 +68,129 @@
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
 }
 
-.logreg-box .form-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+.logreg-box .form-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
-.form-box h2{
-    color: #000;
-font-feature-settings: 'clig' off, 'liga' off;
+.logreg-box .form-box.login{
+  transform: translateX(0);
+  transition: .6s ease;
+}
+.logreg-box.active .form-box.login{
+  transform: translateX(640px);
+  transition-delay: 0s;
+}
+.logreg-box .form-box.register{
+  transform: translateX(640px);
+  transition: .5s ease;
+}
+.logreg-box.active .form-box.register{
+  transform: translateX(0);
+  transition-delay: .7s;
+}
+.form-box h2 {
+ 
+  font-feature-settings: "clig" off, "liga" off;
 
-font-size: 36px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.5px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.form-box .input-box{
+  position: relative;
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid white;
+  margin: 30px 0;
+
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -5px;
+  transition: .5s ease;
+}
+.logreg-box {
+  color: white;
+}
+.input-box .icon{
+  position: absolute;
+  right: 0;
+  top: 13px;
+  font-size: 19px;
+}
+.form-box .remember-forgot{
+  font-size: 14px;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forgot label input{
+  accent-color: white;
+  margin-right: 3px;
+}
+
+.remember-forgot a{
+  color: white;
+  text-decoration: none;
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+.form-box .submit-btn{
+  width: 100%;
+  height: 45px;
+  background-color: #D3AA5E;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+.form-box .login-register{
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 25px;
+}
+.login-register p a{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-register p a:hover{
+  text-decoration: underline;
 }
