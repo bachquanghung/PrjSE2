@@ -1,10 +1,9 @@
 import React from "react";
 import "./Home.css";
-
 import wallpaper from "../../assets/wallpaper.png";
 import sponsors from "../../assets/sponsors.png";
 import onChainDice from "../../assets/on-chain-dice.png";
-
+import { Link } from "react-router-dom";
 import goldenDice from "../../assets/goldenDice.png";
 import chip from "../../assets/chip.png";
 import CountUp from "react-countup";
@@ -56,7 +55,9 @@ const Home = () => {
               justifyContent: "center",
             }}
           >
+            <Link to = '/game'>
             <button>Play Now</button>
+            </Link>
           </div>
         </div>
       </div>

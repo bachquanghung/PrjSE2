@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import { useState, useEffect } from "react";
+import Login from "../../offpage/Login/Login";
 import "./Header.css";
 const Header = () => {
   const items = [
@@ -50,6 +50,7 @@ const Header = () => {
 
   return (
     <div className="wrapper">
+      <Login></Login>
       <Container>
         <div className="header">
           <div className="header-above">
@@ -69,11 +70,11 @@ const Header = () => {
               </div>
             ) : (
               <div className="Sign-in-out">
-              <Link to ='/login'>
+          
                 <span className="sign-header" style={{ color: "white" }}>
                   Sign in
                 </span>
-                </Link>
+            
                 <span
                   className="sign-header"
                   style={{

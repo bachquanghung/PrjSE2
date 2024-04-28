@@ -89,6 +89,14 @@ const Store = () => {
     },
   ];
   return (
+    <div style={{backgroundColor: '#0c141a'}}>
+      <div className="store-title">
+      Browse Marketplace
+      </div>
+      <div className="store-choice">
+      <div className="store-choice-option" style={{borderBottom:'2px solid white'}}>Store</div>
+      <div className="store-choice-option">Collection</div>
+      </div>
     <div className="store-container">
       {games.map((game) => {
         return (
@@ -124,6 +132,7 @@ const Store = () => {
           </div>
         );
       })}
+    </div>
     </div>
   );
 };
