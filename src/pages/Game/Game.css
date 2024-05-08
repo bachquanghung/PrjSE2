@@ -1,0 +1,214 @@
+.game-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-title {
+  color: #d3aa5e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 0 7%;
+}
+
+.select-option {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 7% 0;
+}
+.bet-options {
+  display: flex;
+  justify-content: space-around;
+}
+.bet-option {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffdd9e 0%, #d3aa5e 100%);
+  box-shadow: 0px 4px 4px 0px rgba(255, 221, 158, 0.25);
+  display: inline-flex;
+  height: 432px;
+  width: 30%;
+  padding: 145px 101px 144px 100px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+.bet-option.off {
+  background: linear-gradient(180deg, #dfdcd7 0%, #585753 100%);
+}
+.bet-option:hover {
+  background: linear-gradient(180deg, #ffdd9e 0%, #da9820 100%);
+}
+.range {
+  color: #0c141a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.up-down {
+  color: rgba(12, 20, 26, 0.2);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.bet-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.change-amount-btn {
+  width: 48px;
+  height: 48px;
+  background-color: #0c141a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  border-radius: 10px;
+  transform: translateY(200px);
+  transition: 0.5s ease;
+}
+.change-amount-btn.active {
+  transform: translateY(0px);
+}
+.amount {
+  display: flex;
+  width: 204px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #0c141a;
+  color: #1bb96b;
+  color: #1bb96b;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 10px 20px;
+  transform: translateY(200px);
+  transition: 0.5s ease;
+}
+.amount.active {
+  transform: translateY(00px);
+}
+.roll-btn {
+  display: flex;
+  width: 204px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #d3aa5e;
+  margin: 50px;
+  color: #f5f5f5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.roll-btn.off{
+  background-color: gray;
+}
+.inGame {
+  position: absolute;
+  background: hsla(0, 0%, 0%, 1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  opacity: 0.6;
+
+}
+
+.dish {
+  position: absolute;
+  display: inline-flex;
+  padding: 153px 41px 154px 41px;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffdd9e 0%, #d3aa5e 100%);
+  opacity: 1;
+  z-index: 1000;
+  top: 28%;
+  left: 35%;
+  flex-direction: column;
+
+
+}
+.play-again-btn{
+  
+  display: flex;
+  width: 204px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #e7ae44;
+  margin: 50px;
+  color: #f5f5f5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+  z-index: 1000;
+}
+
+.dice {
+
+  
+  position: relative;
+}
+
+.dice img {
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.rolling img {
+  animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

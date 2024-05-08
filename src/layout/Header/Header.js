@@ -1,4 +1,4 @@
-import React from "react";
+import {React} from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -44,13 +44,16 @@ const Header = () => {
       text: false,
     },
   ];
-
+  const [loginShow, setLoginShow] = useState(false)
   const [types, setTypes] = useState("Home");
   const [localUsername, setLocalUsername] = useState(false);
 
+  const onClickSignIn = () =>{
+    setLoginShow(!loginShow)
+  }
   return (
     <div className="wrapper">
-      <Login></Login>
+      <Login show={loginShow} handleLoginShow={setLoginShow}></Login>
       <Container>
         <div className="header">
           <div className="header-above">
@@ -71,7 +74,7 @@ const Header = () => {
             ) : (
               <div className="Sign-in-out">
           
-                <span className="sign-header" style={{ color: "white" }}>
+                <span className="sign-header" style={{ color: "white" }} onClick={onClickSignIn}>
                   Sign in
                 </span>
             

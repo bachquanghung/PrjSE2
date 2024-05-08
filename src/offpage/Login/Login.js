@@ -2,13 +2,21 @@ import {React, useState} from "react";
 import "./Login.css";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
-const Login = () => {
+import { RiEyeCloseLine } from "react-icons/ri";
+import { IoMdCloseCircle } from "react-icons/io";
+const Login = ({show, handleLoginShow}) => {
     const [state, setState] = useState(true)
+    const [hide, setHide] = useState(false)
     const handleClick = () => {
         setState(!state);
     }
+    const handleShow = () => {
+      setHide(!hide);
+  }
+  
   return (
-    <div className="container-login">
+    <div className={show ? "container-login" : "container-login-off"}>
+      <span style={{position:'absolute', right:'2%', top: '2%', fontSize:'25px', zIndex: '100000', color:'white', cursor:'pointer'}} onClick={() => {handleLoginShow(!show)}}><IoMdCloseCircle/></span>
       <div className="content-login"></div>
       <div className="content-login-layer">
         <div
@@ -26,20 +34,21 @@ const Login = () => {
           Roll the dice of fate and shape your destiny!
         </div>
       </div>
-      <div className="logreg-box">
+      <div className={state ? "logreg-box" : 'logreg-box active'}>
         <div className="form-box login">
           <form action="#">
             <h2 style={{ color: "white" }}>Sign In</h2>
             <div className="input-box">
               <span className="icon"></span>
-              <input type="email" required></input>
+              <input type="text" required></input>
               <label>Email</label>
             </div>
             <div className="input-box">
-              <span className="icon">
-                <IoEyeOutline />
+              <span className="icon" onClick={handleShow}>
+                {hide ? <IoEyeOutline /> : <RiEyeCloseLine/>}
+                
               </span>
-              <input type="password" required></input>
+              <input type={hide ? "text" : "password"} required></input>
               <label>Password</label>
             </div>
             <div className="remember-forgot">
@@ -75,14 +84,16 @@ const Login = () => {
             </div>
             <div className="input-box">
               <span className="icon"></span>
-              <input type="email" required></input>
+              <input type="text" required></input>
               <label>Email</label>
             </div>
             <div className="input-box">
-              <span className="icon">
-                <IoEyeOutline />
+             
+              <span className="icon" onClick={handleShow}>
+                {hide ? <IoEyeOutline /> : <RiEyeCloseLine/>}
               </span>
-              <input type="password" required></input>
+
+              <input type={hide ? "text" : "password"} required></input>
               <label>Password</label>
             </div>
             <div className="remember-forgot">

@@ -12,6 +12,9 @@
   z-index: 1000;
   position: fixed;
 }
+.container-login-off{
+  display: none;
+}
 .content-login {
   width: 45%;
   height: 100%;
@@ -84,7 +87,7 @@
 }
 .logreg-box .form-box.login{
   transform: translateX(0);
-  transition: .6s ease;
+  transition: .5s ease;
 }
 .logreg-box.active .form-box.login{
   transform: translateX(640px);
@@ -96,7 +99,7 @@
 }
 .logreg-box.active .form-box.register{
   transform: translateX(0);
-  transition-delay: .7s;
+  transition-delay: 0s;
 }
 .form-box h2 {
  
