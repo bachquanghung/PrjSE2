@@ -24,13 +24,6 @@ const Header = () => {
       type: "Instruction",
       text: false,
     },
-
-    {
-      id: 4,
-      to: "/achievement",
-      type: "Achievement",
-      text: false,
-    },
     {
       id: 5,
       to: "/store",
@@ -86,7 +79,9 @@ const Header = () => {
                     marginLeft: "20px",
                   }}
                 >
+                  <Link to = '/profile'>
                   Sign up
+                  </Link>
                 </span>
               </div>
             )}

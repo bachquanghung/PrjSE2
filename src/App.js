@@ -4,11 +4,11 @@ import Layout from "./layout/Layout/Layout.js";
 import Home from "./pages/Home/Home.js";
 import Game from "./pages/Game/Game.js";
 import Instruction from "./pages/Instruction/Instruction.js";
-import Achievement from "./pages/Achievement/Achievement.js";
 import Store from "./pages/Store/Store.js";
 import Aboutus from "./pages/About us/Aboutus.js";
 import Register from "./offpage/Register/Register.js";
 import Login from "./offpage/Login/Login.js";
+import Profile from "./pages/Profile/Profile.js";
 function App() {
   const publics = [
     {
@@ -24,8 +24,8 @@ function App() {
       pages: Instruction,
     },
     {
-      path: "/achievement",
-      pages: Achievement,
+      path: "/profile",
+      pages: Profile,
     },
     {
       path: "/store",

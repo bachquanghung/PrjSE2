@@ -1,0 +1,99 @@
+.profile-cover {
+  width: 100%;
+  z-index: 1;
+}
+.profile-upper {
+  width: 90%;
+  height: 243px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #1a202c;
+  margin-top: 0;
+  z-index: 100;
+  margin-top: -6%;
+}
+.profile-upper img {
+  margin-top: -10%;
+}
+.profile-upper-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.profile-upper-info-title {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.profile-upper-info-content {
+  color: #d3aa5e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+}
+.profile-upper-info-content span {
+  display: flex;
+  width: 200px;
+  height: 44px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #d3aa5e;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.profile-under{
+    width: 90%;
+    margin-top: 40px;
+}
+.profile-options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #3a3a39;
+  
+}
+.profile-option {
+  display: flex;
+  height: 60px;
+  padding: 0px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  color: #858584;
+  text-align: center;
+  
+  /* H5 - Work Sans */
+
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+.profile-option.active{
+    color: #D3AA5E;
+    border-bottom: 2px solid #D3AA5E;
+}
