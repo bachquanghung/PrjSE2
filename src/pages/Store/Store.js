@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import Card from "react-bootstrap/Card";
 import "./Store.css";
 import image1 from "../../assets/Image Placeholder.png";
@@ -10,7 +10,7 @@ import image6 from "../../assets/Image Placeholder (5).png";
 import image7 from "../../assets/Image Placeholder (6).png";
 import image8 from "../../assets/Image Placeholder (7).png";
 import image9 from "../../assets/Image Placeholder (8).png";
-import avatarBlank from "../../assets/avatar.png";
+
 
 const Store = () => {
   const games = [
@@ -88,11 +88,13 @@ const Store = () => {
       bid: 0.33,
     },
   ];
+  
   return (
     <div style={{backgroundColor: '#0c141a'}}>
       <div className="store-title">
       Browse Marketplace
       </div>
+      <div className="extra-content-store">Use your card collection to play game</div>
       <div className="store-choice">
       <div className="store-choice-option" style={{borderBottom:'2px solid white'}}>Store</div>
       <div className="store-choice-option">Collection</div>
